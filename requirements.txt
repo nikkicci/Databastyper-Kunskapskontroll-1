@@ -2,4 +2,4 @@ streamlit
 pandas
 numpy
 pymongo==4.11
-
+matplotlib==3.10.0
