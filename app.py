@@ -19,7 +19,8 @@ suppliers_df = pd.DataFrame(suppliers_data)
 merged_data = pd.merge(products_df, suppliers_df, on='SupplierID', how='inner')
 
 # Anslut till MongoDB
-PWD = open('mongodb.pwd', 'r').read().strip()
+# Läs lösenordet från secrets.toml
+PWD = st.secrets["mongo"]["password"]
 encoded_pwd = urllib.parse.quote_plus(PWD)
 uri = f'mongodb+srv://nicolinalottsfeldtdata24hel:{encoded_pwd}@cluster0.xljmi.mongodb.net/'
 client = MongoClient(uri, server_api=ServerApi('1'))
