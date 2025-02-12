@@ -109,8 +109,9 @@ result = collection.aggregate([
 # Visa resultaten i Streamlit
 result_list = list(result)
 
+image_path = 'images/my_image.jpg' 
+
 # Lägg till en bild som visas överst
-image_path = r"C:\Users\kolcz\Downloads\christmas-wallpaper-2009590_1280.jpg"  
 st.image(image_path, use_container_width=True)
 
 # Lägg till en titel
