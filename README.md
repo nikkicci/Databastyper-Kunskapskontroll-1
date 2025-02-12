@@ -22,7 +22,9 @@ För att kunna köra Streamlit tillsammans med MongoDB krävs det:
 ### Filer för de olika databastyperna
 
 * Redis: här använder jag filen orders.csv i sitt ursprungsformat.
-* MongoDB: här använder jag en sammanslagning av products.csv och suppliers.json till collections samt konverterar Pandas DataFrame till en lista av dictionaries (JSON-liknande struktur) som kan hämta data från databasen i MongoDB.
+  
+* MongoDB: här använder jag en sammanslagning av products.csv och suppliers.json till collections samt konverterar Pandas DataFrame till en lista av dictionaries (JSON-liknande struktur) som kan hantera data mot databasen i MongoDB.
+  
 * Neo4j: här har jag skapat nya csv-filer från ursprungsdatan movies.json för att bättre kunna arbeta med datan och strukturen till min grafdatabas i Neo4j. De nya filerna är:
     * actors.csv
     * actors_movies.csv
