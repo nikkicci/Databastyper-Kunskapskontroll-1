@@ -2,4 +2,4 @@ C:\Users\kolcz\Documents\DM_databastyper\databaser_kunskapskontroll_1_nikki\data
 *.pwd
 playground-1.mongodb.js
 test.py 
-.streamlit/
+.streamlit/secrets.toml
