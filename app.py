@@ -20,10 +20,18 @@ merged_data = pd.merge(products_df, suppliers_df, on='SupplierID', how='inner')
 
 # Anslut till MongoDB
 # Läs lösenordet från secrets.toml
+username = st.secrets["mongo"]["username"] 
 PWD = st.secrets["mongo"]["password"]
 encoded_pwd = urllib.parse.quote_plus(PWD)
 uri = f'mongodb+srv://nicolinalottsfeldtdata24hel:{encoded_pwd}@cluster0.xljmi.mongodb.net/'
 client = MongoClient(uri, server_api=ServerApi('1'))
+
+
+# Koda lösenordet för att undvika specialtecken
+encoded_pwd = urllib.parse.quote_plus(PWD)
+
+# Skapa MongoDB URI
+uri = f"mongodb+srv://{username}:{encoded_pwd}@cluster0.xljmi.mongodb.net/"
 
 # Testa kopplingen
 try:
