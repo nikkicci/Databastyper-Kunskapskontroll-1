@@ -19,4 +19,17 @@ För att kunna köra Streamlit tillsammans med MongoDB krävs det:
 * import time
 * import matplotlib.pyplot as plt
 
+### Filer för de olika databastyperna
+
+* Redis: här använder jag filen orders.csv i sitt ursprungsformat.
+* MongoDB: här använder jag en sammanslagning av products.csv och suppliers.json till collections samt konverterar Pandas DataFrame till en lista av dictionaries (JSON-liknande struktur) som kan hämta data från databasen i MongoDB.
+* Neo4j: här har jag skapat nya csv-filer från ursprungsdatan movies.json för att bättre kunna arbeta med datan och strukturen till min grafdatabas i Neo4j. De nya filerna är:
+    * actors.csv
+    * actors_movies.csv
+    * directors.csv
+    * genres.csv
+    * genres_movies.csv
+    * movies.csv
+_______________________________________________________________________________________________
+
 *Mycket nöje!* 🪄
