@@ -1,3 +1,5 @@
 streamlit
 pandas
 numpy
+pymongo==4.11
+
