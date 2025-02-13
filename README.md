@@ -4,7 +4,7 @@ I det här repositoriet finns mina filer och kod samlat för databastyper inom N
 
 ### Streamlit
 
-Här finns även min webb-app hos Streamlit där jag visar data hanterad via MongoDB som är en dokumentationsdatabas. I appen visar jag data för produkter som behöver beställas.
+Här finns även min webb-app hos Streamlit Cloud där jag visar data hanterad via MongoDB som är en dokumentationsdatabas. I appen visar jag data för produkter som behöver beställas. Länk till denna är: https://dokumentdatabas.streamlit.app/
 
 ### Vad som krävs i installation och import
 
